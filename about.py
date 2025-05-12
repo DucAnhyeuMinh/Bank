@@ -1,5 +1,5 @@
 import streamlit as st
-from Modules import VisualHandler
+from Module import VisualHandler
 
 st.set_page_config(
     page_title="About",
