@@ -3,6 +3,7 @@ import base64
 import toml
 from datetime import datetime
 from streamlit_extras.switch_page_button import switch_page
+from Account import User
 
 
 class Time:
@@ -85,6 +86,7 @@ class VisualHandler:
                 switch_page("About")
             st.divider()
             st.title("User Management")
+            User.user_management()
             st.divider()
             st.markdown('<div style="text-align: center">© 2024 by Group 6 - DSEB 65B</div>', unsafe_allow_html=True)
 

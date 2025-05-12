@@ -1,5 +1,5 @@
 import streamlit as st
-from Module import VisualHandler
+from Modules import VisualHandler
 
 st.set_page_config(
     page_title="About",
@@ -25,8 +25,8 @@ def display_about():
     Embark on this journey of self-discovery today and uncover a deeper understanding of your own character.""")
     col1, col2 = st.columns([1, 3])
     
-    #with col1:
-       # st.image(st.session_state.logo, use_column_width="auto")
+    with col1:
+        st.image(st.session_state.logo, use_column_width="auto")
     with col2:
         st.header("Our Offerings")
         
